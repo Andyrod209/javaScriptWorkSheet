@@ -80,7 +80,7 @@
 //     number += 1;
 // }
 
-// while loops
+// // while loops
 // let fishFlying = true
 // let amountOfFishFlying = 1
 // while(fishFlying){
@@ -90,3 +90,17 @@
 //         fishFlying = false
 //     }
 // }
+
+// functions
+
+// Favorite Movie (void functions)
+// function printMovieName(){
+//     let favoriteMovie = "Spider Man No Way Home"
+//     console.log(favoriteMovie)
+//     // return is required for void functions
+//     return favoriteMovie
+// }
+// // calling the function
+// printMovieName()
+
+// Favorite Band (return functions)
