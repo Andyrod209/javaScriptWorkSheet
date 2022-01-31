@@ -94,13 +94,35 @@
 // functions
 
 // Favorite Movie (void functions)
-// function printMovieName(){
-//     let favoriteMovie = "Spider Man No Way Home"
-//     console.log(favoriteMovie)
-//     // return is required for void functions
-//     return favoriteMovie
-// }
-// // calling the function
-// printMovieName()
+function printMovieName(){
+    let favoriteMovie = "Spider Man No Way Home"
+    console.log(favoriteMovie)
+    // return is required for void functions
+    return favoriteMovie
+}
+// calling the function
+printMovieName()
 
 // Favorite Band (return functions)
+
+function printFavoriteBand(){
+    let favoriteBand = prompt("Input your favorite band ")
+    console.log(favoriteBand)
+    return favoriteBand
+}
+// able to use function for many different users
+let jacksFavoriteBand = printFavoriteBand()
+let franksFavoriteBand = printFavoriteBand()
+
+concert (parameters)
+
+function concertDisplay(musicalAct){
+    let myStreet = prompt('Enter your street address ')
+    console.log("It would be great if " + musicalAct + " played a show on " + myStreet)    
+}
+let tims = concertDisplay('Rock Mits')
+
+// Arrays
+
+// Desktop items
+let desktoipItems = [];
