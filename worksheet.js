@@ -68,16 +68,14 @@ for(let i = 0; i < 11; i++){
     number += 1
 }
 
-// loop to display hello and then goodbye 5 times each
-let number = 1 
+// loop to display hello and then goodbye 5 times each 
 for (let i = 0; i < 10; i++){
-    if (number == 1 || number == 3 || number == 5 || number == 7 || number == 9){
+    if (i == 0 || i == 2 || i == 4 || i == 6 || i == 8){
         console.log('hello');
     }
-    else if(number == 2 || number == 4 || number == 6 || number == 8 || number == 10){
+    else if(i == 1 || i == 3 || i == 5 || i == 7 || i == 9){
         console.log('goodbye');
     }
-    number += 1;
 }
 
 // while loops
@@ -134,7 +132,7 @@ for(let i = 0; i < desktopItems.length; i++){
 }
 
 // Magic Number
-let magicNumber = Math.floor(Math.random() * 100)
+let magicNumber = Math.floor(Math.random() * 10)
 let guess = 0
 while(guess != magicNumber){
     let userGuess = prompt()
