@@ -134,11 +134,31 @@
 // }
 
 // Magic Number
-let magicNumber = 50
+let magicNumber = Math.floor(Math.random() * 100)
 let guess = 0
-while(guess == magicNumber){
+while(guess != magicNumber){
     let userGuess = prompt()
-    if(userGuess == 50)
-    guess = userGuess
-    console.log(guess)
+    if(userGuess == magicNumber){
+        guess = userGuess
+        console.log(guess + ' Is the correct number! You win!')
+
+    }
+
+    else if(userGuess > magicNumber - 10 && userGuess < magicNumber){
+        console.log('Too Low!')
+        console.log('Getting warmer!')
+    }
+
+    else if(userGuess < magicNumber){
+        console.log('Too Low!')
+    }
+
+    else if(userGuess < magicNumber + 10 && userGuess > magicNumber){
+        console.log('Too High!')
+        console.log('Getting warmer!')
+    }
+
+    else if(userGuess > magicNumber){
+        console.log('Too High!')
+    }
 }
